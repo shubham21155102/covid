@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 world</title>
+    <link rel="stylesheet" href="world.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/38226a7b5d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <body>
+
+
+    </body>
+    <div class="menu-bar">
+        <ul>
+
+            <li class="active"> World </t>
+                </t><i class="fa-solid fa-circle-chevron-right"></i></li>
+
+            <li id="Asia"> <a href="/asia">Asia</a></li>
+
+
+            <li id="Europe">Europe</li>
+            <li id="Africa">Africa</li>
+            <li id="NorthAmerica">North America</li>
+            <li id="SouthAmerica">South America</li>
+            <li id="Australia">Australia</li>
+        </ul>
+    </div>
+    <%-include("ask.ejs")-%>
+        <div class="covid-data">
+
+            <% datasworld.forEach((data) => { %>
+                <center class="heading1">
+                    <h1 class="head"> COVID 19
+                        </h1>
+                            </center>
+                                <center>
+                                    <h2 class="world"> WORLD!
+                                        </h2>
+                                            </center>
+
+                                                Total Cases:
+                                                <%=data.TotalCases%>
+                                                    <br> New Cases:
+                                                        <%=data.NewCase%>
+                                                            <br> Total Recovered:
+                                                                <%=data.TotalRecovered%>
+                                                                    <br> New Recovered:
+                                                                        <%=data.NewRecovered%>
+                                                                            <br> Total Cases:
+                                                                                <%=data.TotalCases%>
+                                                                                    <br> Active Cases:
+                                                                                        <%=data.ActiveCases%>
+                                                                                            <br> Total Deaths:
+                                                                                                <%=data.TotalDeaths%>
+                                                                                                    <br> New Deaths:
+                                                                                                        <%=data.NewDeaths%>
+                                                                                                            <br>
+                                                                                                                <% }); %>
+                                                                                                                    </div>
+                                                                                                                        </body>
+
+                                                                                                                            </html>

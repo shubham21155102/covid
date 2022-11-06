@@ -1,0 +1,69 @@
+<% covidDatas.forEach((data)=>{%>
+<tr>
+    <th><%=data.symbol%></th>
+    <th><%=data.continent%></th>
+    <th><%=data.Rank%></th>
+    <th><%=data.TotalCases%></th>
+    <th><%=data.NewCase%></th>
+    <th><%=data.TotalDeaths%></th>
+    <th><%=data.NewDeaths%></th>
+</tr>
+
+
+<%})%>
+
+   <%  ratings.forEach((data) => { %>
+           <tr>
+
+            <th> <%=data.contestId%></th>
+            <th> <%=data.contestName.substring(0,50)%></th>
+            <th><%=data.rank%></th>
+            <th><%=data.oldRating%></th>
+            <th><%=data.newRating%></th>
+
+           </tr>    <% }); %>
+
+            <th><%=ActiveCases%></th>
+    <th><%=TotalTests%></th>
+    <th><%=Population%></th>
+
+
+
+
+
+.sub-menu-1 .sub-menu-1-sub-menu-1{
+        display:none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 .sub-menu-1-sub-menu-1{
+        display: block;
+        position: absolute;
+        background-color: rgba(0.1,0,0,0.5) ;
+        margin-top: 15px;
+        margin-left: -15px;
+        border-radius: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul .sub-menu-1-sub-menu-1 ul{
+        display: block;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li .sub-menu-1-sub-menu-1 {
+        width:150px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        /* background: transparent; */
+        border-radius: 5px;
+        text-align: left;
+
+    }
+
+
+     <li id="Asia"> Asia <div class="sub-menu-1-sub-menu-1"><ul>
+                <% datas.forEach((data)=>{%>
+
+            <li><span><%=data.country%></span></li>
+
+               <% })%>
+
+
+               </ul></div></li>

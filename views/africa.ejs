@@ -1,0 +1,126 @@
+<%- include("header.ejs") -%>
+
+    <center> <i><h1>Covid 19 Status of countries of <%=continent%> </h1></i></center>
+    <div class="weather1">
+        <table>
+            <tr>
+                <th>
+                    <div class="symbol1">Symbol </th>
+                </div>
+
+                <th>
+                    <div class="symbol1"> Country</div>
+                </th>
+                <th>
+                    <div class="symbol1">Rank</div>
+                </th>
+                <th>
+                    <div class="symbol1">Continent</div>
+                </th>
+                <th>
+                    <div class="symbol1">Total Cases</div>
+                </th>
+                <th>
+                    <div class="symbol1">New Cases</div>
+                </th>
+                <th>
+                    <div class="symbol1">Total Recovered</div>
+                </th>
+                <th>
+                    <div class="symbol1">New Recovered</div>
+                </th>
+                <th>
+                    <div class="symbol1">Active Cases</div>
+                </th>
+                <th>
+                    <div class="symbol1">Total Tests</div>
+                </th>
+                <th>
+                    <div class="symbol1">Population</div>
+                </th>
+                <th>
+                    <div class="symbol1">Total Deaths</div>
+                </th>
+                <th>
+                    <div class="symbol1">New Deaths</div>
+                </th>
+            </tr>
+
+            <% datas.forEach((data) => { %>
+                <tr>
+                    <th>
+                        <div class="symbol">
+                            <%= data.symbol %>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="country">
+                            <%= data.country %>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="rank">
+                            <%=data.Rank%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="continent">
+                            <%=data.continent%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="totalCases">
+                            <%=data.TotalCases%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="newCases">
+                            <%=data.NewCase%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="totalRecovered">
+                            <%=data.TotalRecovered%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="newRecovered">
+                            <%=data.NewRecovered%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="Activecases">
+                            <%=data.ActiveCases%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="TotalTests">
+                            <%=data.TotalTests%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="Populations">
+                            <%=data.Population%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="TotalDeaths">
+                            <%=data.TotalDeaths%>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="NewDeaths">
+                            <%=data.NewDeaths%>
+                        </div>
+                    </th>
+                </tr>
+
+                <% }); %>
+        </table>
+    </div>
+    <header>
+
+    </header>
+
+    <body>
+        <%- include("footer.ejs") -%>

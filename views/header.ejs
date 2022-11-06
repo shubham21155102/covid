@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/38226a7b5d.js" crossorigin="anonymous"></script>
+</head>
+<div class="menu-bar"><ul>
+
+    <li class="active"> World
+        <div class="sub-menu-1"><ul>
+
+                <li id="Europe" >Europe</li>
+                <li id="Africa">Africa</li>
+                <li id="NorthAmerica">North America</li>
+                <li id="SouthAmerica">South America</li>
+                <li id="Australia">Australia</li>
+            </ul></div>
+    </li>
+      <li id="Asia" class="activecontinent"> Asia
+  <div class="sub-menu-1"><ul>
+    <% datas.forEach((data)=>{%>
+
+<li><span><%=data.country%></span></li>
+
+   <% })%>
+
+
+   </ul></div>
+      </li>
+  <li id="Europe" >Europe
+    <div class="sub-menu-1"><ul>
+        <% datas.forEach((data)=>{%>
+
+    <li><span><%=data.country%></span></li>
+
+       <% })%>
+
+
+       </ul></div>
+  </li>
+  <li id="Africa">Africa  <div class="sub-menu-1"><ul>
+    <% datas.forEach((data)=>{%>
+
+<li><span><%=data.country%></span></li>
+
+   <% })%>
+
+
+   </ul></div></li>
+  <li id="NorthAmerica">North America  <div class="sub-menu-1"><ul>
+    <% datas.forEach((data)=>{%>
+
+<li><span><%=data.country%></span></li>
+
+   <% })%>
+
+
+   </ul></div></li>
+  <li id="SouthAmerica">South America  <div class="sub-menu-1"><ul>
+    <% datas.forEach((data)=>{%>
+
+<li><span><%=data.country%></span></li>
+
+   <% })%>
+
+
+   </ul></div></li>
+  <li id="Australia">Australia  <div class="sub-menu-1"><ul>
+    <% datas.forEach((data)=>{%>
+
+<li><span><%=data.country%></span></li>
+
+   <% })%>
+
+
+   </ul></div></li>
+  </ul></div>
+
+
